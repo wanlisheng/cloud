@@ -1,0 +1,49 @@
+server:
+    port: 20003
+spring:
+#    #    aop:
+#    #        proxy-target-class: false
+    application:
+        name: cloud-demo-order
+    cloud:
+        nacos:
+            # 注册中心
+            discovery:
+                server-addr: http://192.168.198.130:8848
+            # 配置中心
+            config:
+                server-addr: ${spring.cloud.nacos.discovery.server-addr}
+                file-extension: yaml
+                shared-configs[0]:
+                    data-id: cloud-demo-order-dev.yaml
+                    refresh: true
+#        alibaba:
+#            seata:
+#                tx-service-group: demo-order
+    shardingsphere:
+        datasource:
+            names: master,slave
+            master:
+                type: com.zaxxer.hikari.HikariDataSource
+                driver-class-name: com.mysql.jdbc.Driver
+                jdbc-url: jdbc:mysql://192.168.198.130:3306/sharding_course_db?useUnicode=true&characterEncoding=utf-8&useSSL=false
+                username: root
+                password: 123456
+            slave:
+                type: com.zaxxer.hikari.HikariDataSource
+                driver-class-name=com: mysql.jdbc.Driver
+                jdbc-url: jdbc:mysql://192.168.198.132:3306/sharding_course_db?useUnicode=true&characterEncoding=utf-8&useSSL=false
+                username: root
+                password: 123456
+
+        rules:
+            readwrite-splitting:
+                data-sources:
+                    ms1:
+                        type: Static # 读写分离类型，如: Static，Dynamic, ms1 包含了  m1 和 s1
+                        props:
+                            write-data-source-name: master # 写数据源名称
+                            read-data-source-names: slave  # 读数据源名称，多个从数据源用逗号分隔
+        props:
+            sql-show: true # 打印SQl
+

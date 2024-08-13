@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-common/common-base/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-common/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-common/common-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-common/common-mybatisplus/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-auth/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-admin/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-admin/admin-api/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-admin/admin-boot/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-common/common-web/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-demo/demo-seata/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-demo/demo-zipkin/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-demo/demo-seata/demo-account/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-demo/demo-seata/demo-order/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-demo/demo-seata/demo-storage/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-demo/demo-zipkin/demo-a/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-demo/demo-zipkin/demo-b/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-demo/demo-zipkin/demo-c/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/cloud-demo/demo-seata/sharding/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

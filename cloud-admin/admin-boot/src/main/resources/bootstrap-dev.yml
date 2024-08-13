@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://192.168.198.130:8848
+      config:
+          server-addr: http://192.168.198.130:8848
+          file-extension: yaml
+          shared-configs[0]:
+              data-id: cloud-admin-dev.yaml
+              refresh: true

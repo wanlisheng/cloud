@@ -1,0 +1,32 @@
+spring:
+    application:
+        name: cloud-gateway
+    cloud:
+        nacos:
+            # 注册中心
+            discovery:
+                server-addr: http://192.168.198.130:8848
+            # 配置中心
+            config:
+                server-addr: http://192.168.198.130:8848
+                file-extension: yaml
+                shared-configs[0]:
+                    data-id: cloud-gateway-dev.yaml
+                    refresh: true
+#spring:
+#    redis:
+#        sentinel:
+#            master: mymaster
+#            nodes:
+#                - 198.168.198.130:26379
+#                - 198.168.198.132:26380
+#        password: 12345678
+#
+#redisson:
+#    config: |
+#        sentinelServers:
+#          masterName: mymaster
+#          sentinelAddresses:
+#            - redis://198.168.198.130:26379
+#            - redis://198.168.198.132:26380
+#          password: 12345678

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="demo-c" />
+        <module name="demo-b" />
+        <module name="demo-a" />
+        <module name="cloud-getway" />
+        <module name="cloud-auth" />
+        <module name="demo-account" />
+        <module name="common-mybatisplus" />
+        <module name="sharding" />
+        <module name="demo-order" />
+        <module name="demo-storage" />
+        <module name="common-base" />
+        <module name="common-redis" />
+        <module name="admin-boot" />
+        <module name="common-web" />
+        <module name="admin-api" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="order" target="1.8" />
+      <module name="product" target="1.8" />
+      <module name="sharding" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="admin-api" options="-parameters" />
+      <module name="admin-boot" options="-parameters" />
+      <module name="cloud-admin" options="-parameters" />
+      <module name="cloud-auth" options="-parameters" />
+      <module name="cloud-common" options="-parameters" />
+      <module name="cloud-demo" options="" />
+      <module name="cloud-getway" options="-parameters" />
+      <module name="common-base" options="-parameters" />
+      <module name="common-mybatisplus" options="-parameters" />
+      <module name="common-redis" options="-parameters" />
+      <module name="common-web" options="-parameters" />
+      <module name="demo-a" options="-parameters" />
+      <module name="demo-account" options="-parameters" />
+      <module name="demo-b" options="-parameters" />
+      <module name="demo-c" options="-parameters" />
+      <module name="demo-order" options="-parameters" />
+      <module name="demo-storage" options="-parameters" />
+      <module name="order" options="" />
+      <module name="product" options="-parameters" />
+      <module name="sharding" options="-parameters" />
+    </option>
+  </component>
+</project>
